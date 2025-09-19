@@ -62,7 +62,7 @@
       if (response.ok) {
         console.log("✅ Submission sent successfully!");
       } else {
-        console.error("❌ FormSubmit error:", response.statusText);
+        alert("Error: " + error); // or response.statusText
       }
     })
     .catch(error => {
